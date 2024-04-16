@@ -3,15 +3,11 @@ import random
 from collections import deque
 
 class Dice:
-    """
-    Class rolling dice simulation
-    """
     def __init__(self, total_dice, total_sides) :
-        """Initialize rolling dice
-
-        Args:
-            total_dice (int): number of dice to roll
-            total_sides (int): number of sides for each dice
+        """Initialize dice class with provided number of sides and dice
+        args:
+            total_dice(int): number of dice
+            total_sides(int): number of sides for each dice
         """
         self.total_dice = total_dice
         self.total_sides = total_sides
@@ -21,6 +17,7 @@ class Dice:
         # Store the last 100 rolls  
     
     def roll_dice(self):
+        """Simulate rolling dice, return the result"""
         rolls = [random.randint(1, self.total_sides) for _ in range(self.total_dice)]
         total = sum(rolls)
         roll_data = (self.roll_number, rolls, total)
@@ -32,7 +29,7 @@ def main():
     def get_total_dice():
         while True:
             total_dice = input("Total number of dice to roll ( 1-5 ):")
-            #Validation to check total number of dice per roll
+            #Validation to check total number of dice for each roll
             if total_dice.isdigit() and 1 <= int(total_dice) <= 5:
                 return int(total_dice)
             else:
