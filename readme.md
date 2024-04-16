@@ -18,7 +18,7 @@ Before running this program, ensure you have the following installed:
 ### Installing
 To install and run the program, follow below steps: 
 ```
-$ git clone https://github.com/your_username/dice-roll-simulator.git   
+$ git clone https://github.com/PratikThakur-DE/dice_roll_simulator_project1.git   
 $ cd dice-roll-simulator  
 $ python main.py
 ```
