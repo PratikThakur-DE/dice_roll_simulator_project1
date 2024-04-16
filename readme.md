@@ -43,6 +43,12 @@ Roll Number: 1, Individual Rolls: [6, 8, 13, 29], Total: 56
 
 Roll the dice again? y/n:
 ```
+
+## Testing
+### Test Class
+The TestDiceRoller class in the test_dice.py file contains unit tests for the Dice Roller functionality. It tests various scenarios, including edge cases and error scenarios, to ensure the correctness of the code.
+
+
 ## Authors
 * **Pratik Thakur** 
 
